@@ -1,0 +1,22 @@
+# Python 编译产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 虚拟环境（uv 会按 pyproject.toml 重建，不用提交）
+.venv/
+venv/
+
+# 密钥，绝对不能提交
+.env
+
+# RepoAgent 运行时数据：clone 下来的仓库
+data/repos/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 系统
+.DS_Store
+Thumbs.db
