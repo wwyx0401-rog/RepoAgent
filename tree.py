@@ -7,7 +7,7 @@ from pathlib import Path
 SKIP_DIRS = {
     ".git", ".hg", ".svn", ".idea", ".vscode",
     ".venv", "venv", "env",
-    "__pycache__", "node_modules", "dist", "build", ".next",
+    "__pycache__", "node_modules", "dist", "build", ".next","target"
 }
 
 # 扩展名 → 语言名
