@@ -58,7 +58,7 @@ def collect_stats(root: Path) -> tuple[dict[str, int], dict[str, int]]:#返回�
     lines : dict[str, int] = defaultdict(int)#字典的计数器，语言，数量
     files : dict[str, int] = defaultdict(int)#文件，数量
     for path in root.rglob("*"):#root.rglob表示从root根节点遍历每一个
-        if not path.is_file:#如果不是文件
+        if not path.is_file():#如果不是文件
             continue
         if any(part in SKIP_DIRS for part in path.parts):#是跳过类型的文件
             continue
